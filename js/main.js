@@ -12,12 +12,16 @@
   document.querySelector('button').addEventListener('click', ()=>{
 
     const li=document.createElement('li');
-    const text=document.querySelector('input');
-    li.textContent=text.value;
+    const color=document.querySelector('select');
+    li.textContent=`${color.value}-${color.selectedIndex}`;
     document.querySelector('ul').appendChild(li);
+    // const li=document.createElement('li');
+    // const text=document.querySelector('input');
+    // li.textContent=text.value;
+    // document.querySelector('ul').appendChild(li);
 
-    text.value='';
-    text.focus();
+    // text.value='';
+    // text.focus();
 
     // const item1=document.querySelectorAll('li')[1];
     // item1.remove();
