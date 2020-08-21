@@ -1,6 +1,14 @@
 'use strict';
 
 {
+  document.querySelector('button').addEventListener('dblclick',()=>{
+    console.log('Double clicked!');
+  });
+
+  document.addEventListener('mousemove', ()=>{
+    console.log('moved!');
+  });
+
   // function update() {
   //   document.querySelector('p').textContent = 'Changed!';
   //   document.querySelectorAll('p')[1].textContent = 'Changed!';
@@ -9,21 +17,21 @@
   //   });
   // }
 
-  document.querySelector('button').addEventListener('click', ()=>{
+  // document.querySelector('button').addEventListener('click', ()=>{
 
-    const colors= document.querySelectorAll('input');
-    const selectedColors=[];
+  //   const colors= document.querySelectorAll('input');
+  //   const selectedColors=[];
 
-    colors.forEach(color=>{
-      if(color.checked===true){
-        selectedColors.push(color.value);
-      }
-    });
+  //   colors.forEach(color=>{
+  //     if(color.checked===true){
+  //       selectedColors.push(color.value);
+  //     }
+  //   });
 
-    const li=document.createElement('li');
-    // li.textContent=selectedColors.join(',');
-    li.textContent=selectedColors;
-    document.querySelector('ul').appendChild(li);
+  //   const li=document.createElement('li');
+  //   // li.textContent=selectedColors.join(',');
+  //   li.textContent=selectedColors;
+  //   document.querySelector('ul').appendChild(li);
 
     // const colors=document.querySelectorAll('input');
     // let selectedColor;
@@ -85,6 +93,5 @@
     //   targetNode.classList.add('my-color');
     // }
     // targetNode.classList.toggle('my-color')
-  });
   // setTimeout(update, 1000);
 }
