@@ -10,12 +10,23 @@
   // }
 
   document.querySelector('button').addEventListener('click', ()=>{
-    const item2=document.createElement('li');
-    item2.textContent= 'item 2';
 
-    const ulNode=document.querySelector('ul');
-    const ul=document.querySelector('ul');
-    ul.appendChild(item2);
+    const item1=document.querySelectorAll('li')[1];
+    // item1.remove();
+    document;querySelector('ul').removeChild(item1);
+    // const item0 = document.querySelectorAll('li')[0];
+    // const copy = item0.cloneNode(true);
+
+    // const ul=document.querySelector('ul');
+    // const item2=document.querySelectorAll('li')[2];
+    // ul.insertBefore(copy,item2);
+
+    // const item2=document.createElement('li');
+    // item2.textContent= 'item 2';
+
+    // const ulNode=document.querySelector('ul');
+    // const ul=document.querySelector('ul');
+    // ul.appendChild(item2);
 
 
 
