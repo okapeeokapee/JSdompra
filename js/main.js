@@ -10,14 +10,25 @@
   // }
 
   document.querySelector('button').addEventListener('click', ()=>{
-    const targetNode=document.getElementById('target')
+    
+
+
+    // const targetNode=document.getElementById('target');
+
+    // targetNode.textContent=targetNode.dataset.translation;
 
     // document.getElementById('target').textContent = 'Changed!';
     // document.getElementById('target').title = 'This is title!';
-    targetNode.textContent = 'Changed!';
-    targetNode.title = 'This is title!';
-    targetNode.style.color = 'red';
-    targetNode.style.backgroundColor = 'skyblue';
+    // targetNode.textContent = 'Changed!';
+    // targetNode.title = 'This is title!';
+    // targetNode.className='my-color my-border'; 
+    // targetNode.classList.add('my-color'); 
+    // if(targetNode.classList.contains('my-color')===true){
+    //   targetNode.classList.remove('my-color');
+    // }else{
+    //   targetNode.classList.add('my-color');
+    // }
+    // targetNode.classList.toggle('my-color')
   });
   // setTimeout(update, 1000);
 }
