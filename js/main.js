@@ -1,16 +1,20 @@
 'use strict';
 
 {
-
-  const text=document.querySelector('textarea');
-  text.addEventListener('input',()=>{
-    // console.log('input');
-    console.log(text.value.length);
+  document.querySelector('form').addEventListener('submit',e =>{
+    e.preventDefault();
+    console.log('submit');
   });
 
-  text.addEventListener('change',()=>{
-    console.log('change');
-  });
+  // const text=document.querySelector('textarea');
+  // text.addEventListener('input',()=>{
+  //   // console.log('input');
+  //   console.log(text.value.length);
+  // });
+
+  // text.addEventListener('change',()=>{
+  //   console.log('change');
+  // });
 
   // text.addEventListener('focus',()=>{
   //   console.log('focus');
