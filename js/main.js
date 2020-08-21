@@ -11,18 +11,32 @@
 
   document.querySelector('button').addEventListener('click', ()=>{
 
-    const colors=document.querySelectorAll('input');
-    let selectedColor;
+    const colors= document.querySelectorAll('input');
+    const selectedColors=[];
 
     colors.forEach(color=>{
-      if (color.checked===true){
-        selectedColor=color.value;
+      if(color.checked===true){
+        selectedColors.push(color.value);
       }
     });
 
-    const li= document.createElement('li');
-    li.textContent=selectedColor;
+    const li=document.createElement('li');
+    // li.textContent=selectedColors.join(',');
+    li.textContent=selectedColors;
     document.querySelector('ul').appendChild(li);
+
+    // const colors=document.querySelectorAll('input');
+    // let selectedColor;
+
+    // colors.forEach(color=>{
+    //   if (color.checked===true){
+    //     selectedColor=color.value;
+    //   }
+    // });
+
+    // const li= document.createElement('li');
+    // li.textContent=selectedColor;
+    // document.querySelector('ul').appendChild(li);
 
     // const li=document.createElement('li');
     // const color=document.querySelector('select');
