@@ -1,18 +1,36 @@
 'use strict';
 
 {
-  document.querySelector('button').addEventListener('dblclick',()=>{
-    console.log('Double clicked!');
+
+  const text=document.querySelector('textarea');
+  text.addEventListener('input',()=>{
+    // console.log('input');
+    console.log(text.value.length);
   });
+
+  text.addEventListener('change',()=>{
+    console.log('change');
+  });
+
+  // text.addEventListener('focus',()=>{
+  //   console.log('focus');
+  // });
+
+  // text.addEventListener('blur',()=>{
+  //   console.log('blur');
+  // });
+  // document.querySelector('button').addEventListener('dblclick',()=>{
+  //   console.log('Double clicked!');
+  // });
 
   // document.addEventListener('mousemove', e=>{
   //   // console.log('moved!');
   //   console.log(e.clientX,e.clientY);
   // });
-  document.addEventListener('keydown', e=>{
+  // document.addEventListener('keydown', e=>{
     // console.log('moved!');
-    console.log(e.key);
-  });
+    // console.log(e.key);
+  // });
 
   // function update() {
   //   document.querySelector('p').textContent = 'Changed!';
